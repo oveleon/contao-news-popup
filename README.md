@@ -3,7 +3,7 @@ This extension for the open source CMS Contao displays the last news in a popup.
 
 ## Install
 ```shell
-$ composer install oveleon/contao-news-popup
+$ composer require oveleon/contao-news-popup
 ```
 
 ## Configure
