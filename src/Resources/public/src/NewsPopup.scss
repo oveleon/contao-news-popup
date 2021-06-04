@@ -1,0 +1,73 @@
+@mixin popup-placement($prefix){
+  &.#{$prefix}-{
+    &left {
+      left: 25px;
+    }
+
+    &right {
+      right: 25px;
+    }
+
+    &center {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &left, &right, &center{
+
+      @if $prefix == top {
+        top: 0;
+
+        > .inside {
+          transform: translateY(-101%);
+          border-radius: 0 0 5px 5px;
+        }
+      } @else {
+        bottom: 0;
+
+        > .inside {
+          transform: translateY(101%);
+          border-radius: 5px 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+#news-popup{
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+
+  width: 315px;
+
+  > .inside{
+    position: relative;
+    pointer-events: auto;
+    overflow: hidden;
+
+    background: #ffffff;
+    box-shadow: 0 0 30px rgb(0 0 0 / 10%);
+    transition: transform .4s ease-in-out;
+
+    > button{
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+
+      padding: 10px;
+      margin: 0;
+
+      background: transparent;
+      color: #333;
+    }
+  }
+
+  @include popup-placement(top);
+  @include popup-placement(bottom);
+
+  &.open > .inside{
+    transform: translateY(0);
+  }
+}

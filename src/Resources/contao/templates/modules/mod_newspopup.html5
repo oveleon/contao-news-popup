@@ -1,0 +1,19 @@
+<?php
+    $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaonewspopup/build/news-popup.min.js|static';
+    $GLOBALS['TL_CSS'][] = 'bundles/contaonewspopup/build/news-popup.min.css|static';
+?>
+<?php if (!empty($this->articles)): ?>
+    <div id="news-popup" class="<?= $this->class ?> <?= $this->news_popup_placement ?>">
+        <div class="inside">
+            <button id="news-popup-close">✖</button>
+            <?= implode('', $this->articles) ?>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function (){
+            new NewsPopup(document.getElementById('news-popup'), {
+                closeButton: document.getElementById('news-popup-close')
+            })
+        })
+    </script>
+<?php endif; ?>

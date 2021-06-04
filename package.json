@@ -1,0 +1,28 @@
+{
+  "name": "@oveleon/news-popup",
+  "version": "1.0.0",
+  "description": "Shows the latest news in a popup for Contao Open Source CMS",
+  "main": "./src/Resources/public/build/news-popup.cjs.js",
+  "scripts": {
+    "build": "node esbuild.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oveleon/contao-news-popup.git"
+  },
+  "keywords": [
+    "news",
+    "popup",
+    "contao"
+  ],
+  "author": "Daniele Sciannimanica <https://github.com/doishub>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oveleon/contao-news-popup/issues"
+  },
+  "homepage": "https://github.com/oveleon/contao-news-popup#readme",
+  "devDependencies": {
+    "esbuild": "^0.11.23",
+    "esbuild-plugin-sass": "^0.5.0"
+  }
+}

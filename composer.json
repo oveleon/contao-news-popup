@@ -1,0 +1,49 @@
+{
+  "name":"oveleon/contao-news-popup",
+  "type":"contao-bundle",
+  "description":"Shows the latest news in a popup",
+  "keywords":["contao","news","popup"],
+  "homepage":"https://oveleon.de/",
+  "license":"MIT",
+  "authors":[
+    {
+      "name":"Oveleon",
+      "homepage":"https://oveleon.de/",
+      "role":"Developer"
+    },
+    {
+      "name":"Daniele Sciannimanica",
+      "homepage":"https://github.com/doishub",
+      "role":"Developer"
+    }
+  ],
+  "require":{
+    "php":">=7.4",
+    "contao/core-bundle":"^4.9",
+    "contao/news-bundle":"^4.9"
+  },
+  "require-dev": {
+    "contao/manager-plugin": "^2.0"
+  },
+  "conflict": {
+    "contao/core": "*",
+    "contao/manager-plugin": "<2.0 || >=3.0"
+  },
+  "autoload":{
+    "psr-4": {
+      "Oveleon\\ContaoNewsPopup\\": "src/"
+    },
+    "classmap": [
+      "src/Resources/contao/"
+    ],
+    "exclude-from-classmap": [
+      "src/Resources/contao/config/",
+      "src/Resources/contao/dca/",
+      "src/Resources/contao/languages/",
+      "src/Resources/contao/templates/"
+    ]
+  },
+  "extra":{
+    "contao-manager-plugin": "Oveleon\\ContaoNewsPopup\\ContaoManager\\Plugin"
+  }
+}
