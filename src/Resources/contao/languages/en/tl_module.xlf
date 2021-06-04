@@ -1,0 +1,31 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_module.php" source-language="en">
+    <body>
+      <trans-unit id="tl_module.news_popup_placement.0">
+        <source>Popup placement</source>
+      </trans-unit>
+      <trans-unit id="tl_module.news_popup_placement.1">
+        <source>Alignment and display of the popup.</source>
+      </trans-unit>
+
+      <trans-unit id="tl_module.top-left">
+        <source>Top | Left</source>
+      </trans-unit>
+      <trans-unit id="tl_module.top-center">
+        <source>Top | Center</source>
+      </trans-unit>
+      <trans-unit id="tl_module.top-right">
+        <source>Top | Right</source>
+      </trans-unit>
+      <trans-unit id="tl_module.bottom-left">
+        <source>Bottom | Left</source>
+      </trans-unit>
+      <trans-unit id="tl_module.bottom-center">
+        <source>Bottom | Center</source>
+      </trans-unit>
+      <trans-unit id="tl_module.bottom-right">
+        <source>Bottom | Right</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

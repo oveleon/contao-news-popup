@@ -1,0 +1,14 @@
+<?xml version="1.0" ?><xliff version="1.1">
+  <file datatype="php" original="src/Resources/contao/languages/en/tl_news.php" source-language="en" target-language="de">
+    <body>
+      <trans-unit id="tl_news.popup.0">
+        <source>Popup</source>
+        <target>Popup</target>
+      </trans-unit>
+      <trans-unit id="tl_news.popup.1">
+        <source>Allow this news in the popup.</source>
+        <target>Diese Nachricht im Popup erlauben.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
