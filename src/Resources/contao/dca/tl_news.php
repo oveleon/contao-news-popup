@@ -9,11 +9,10 @@ Contao\CoreBundle\DataContainer\PaletteManipulator::create()
 ;
 
 // Fields
-$GLOBALS['TL_DCA']['tl_news']['fields']['popup'] = array
-(
+$GLOBALS['TL_DCA']['tl_news']['fields']['popup'] = [
     'exclude'                 => true,
     'filter'                  => true,
     'inputType'               => 'checkbox',
-    'eval'                    => array('tl_class'=>'w50'),
+    'eval'                    => ['tl_class'=>'w50 cbx m12'],
     'sql'                     => "char(1) NOT NULL default ''"
-);
+];
